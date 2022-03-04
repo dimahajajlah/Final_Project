@@ -5,3 +5,9 @@
 The package will consist of six classes:
 1)PongGame    2) GameFrame    3) GamePanel    4) Paddle   5) Ball   6) Score
 
+
+
+
+
+Dima Alhajajlah 
+dima.alhajajlah@students.alquds.edu
