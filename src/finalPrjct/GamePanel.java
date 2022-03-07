@@ -1,4 +1,8 @@
 package finalPrjct;
+import java.awt.*;
+import java.awt.event.*;
+import java.util.*;
+import javax.swing.*;
 
 public class GamePanel {
 	
@@ -10,6 +14,12 @@ public class GamePanel {
 		
 	}
 	public void newPaddles() {
+		
+	}
+	public void print(Graphics g) {
+		
+	}
+	public void draw(Graphics g) {
 		
 	}
 
