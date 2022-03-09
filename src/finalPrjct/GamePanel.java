@@ -22,5 +22,10 @@ public class GamePanel {
 	public void draw(Graphics g) {
 		
 	}
-
+	public void checkCollision() {
+		
+	}
+	public void run() {
+		
+	}
 }
