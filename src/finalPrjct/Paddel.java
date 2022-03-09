@@ -1,5 +1,8 @@
 package finalPrjct;
 
+import java.awt.Graphics;
+import java.awt.event.KeyEvent;
+
 public class Paddel {
 	
 	Paddel(){
@@ -19,6 +22,13 @@ public class Paddel {
 	}
 	
 	public void setX(int xDirection) {
+		
+	}
+	
+	public void move() {
+		
+	}
+	public void draw(Graphics g) {
 		
 	}
 }
