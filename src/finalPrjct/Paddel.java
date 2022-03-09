@@ -18,7 +18,7 @@ public class Paddel {
 		
 	}
 	
-	public void setY(int yDirection) {
+	public void setX(int xDirection) {
 		
 	}
 }
