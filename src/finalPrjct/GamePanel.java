@@ -28,4 +28,19 @@ public class GamePanel {
 	public void run() {
 		
 	}
+	
+	public class AL extends KeyAdapter{
+		
+		public void keyPressed(KeyEvent e) {
+			
+		}
+		
+		public void keyReleased(KeyEvent e) {
+			
+			
+		}
+
+
+	}
+
 }
