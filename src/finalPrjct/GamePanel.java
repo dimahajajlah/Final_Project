@@ -48,6 +48,7 @@ public class GamePanel extends JPanel implements Runnable {
 		draw(graphics);
 		g.drawImage(image,0,0,this);
 		
+		
 	}
 	public void draw(Graphics g) {
 		
