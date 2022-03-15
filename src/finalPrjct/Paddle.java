@@ -11,7 +11,8 @@ public class Paddle extends Rectangle {
 
 	
 	Paddle(int x, int y, int PaddleWidth, int PaddleHeight, int id){
-		
+		super(x,y,PaddleWidth,PaddleHeight);
+		this.id=id;
 	}
 	
 	public void keyPressed(KeyEvent e) {
