@@ -4,9 +4,9 @@ import java.awt.Graphics;
 import java.awt.Rectangle;
 import java.awt.event.KeyEvent;
 
-public class Paddel extends Rectangle {
+public class Paddle extends Rectangle {
 	
-	Paddel(){
+	Paddle(){
 		
 	}
 	

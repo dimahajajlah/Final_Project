@@ -12,6 +12,14 @@ public class GamePanel extends JPanel {
 	static final int BallDiameter = 20;
 	static final int PaddleWidth = 25;
 	static final int PaddleHeight = 100;
+	Thread gameThread;
+	Image image;
+	Graphics graphics;
+	Random random;
+	Paddle paddle1;
+	Paddle paddle2;
+	Ball ball;
+	Score score;
 	
 	
 	GamePanel(){
