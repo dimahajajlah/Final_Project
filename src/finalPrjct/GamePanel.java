@@ -8,7 +8,11 @@ public class GamePanel extends JPanel {
 	
 	static final int gameWidth=100;
 	static final int gameHeight= (int)(gameWidth*(5/9));
-	//static final
+	static final Dimension ScreenSize = new Dimension(gameWidth,gameHeight);
+	static final int BallDiameter = 20;
+	static final int PaddleWidth = 25;
+	static final int PaddleHeight = 100;
+	
 	
 	GamePanel(){
 		
