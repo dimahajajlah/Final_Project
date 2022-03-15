@@ -6,6 +6,10 @@ import javax.swing.*;
 
 public class GamePanel extends JPanel {
 	
+	static final int gameWidth=100;
+	static final int gameHeight= (int)(gameWidth*(5/9));
+	//static final
+	
 	GamePanel(){
 		
 	}
