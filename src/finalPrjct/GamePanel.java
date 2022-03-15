@@ -1,8 +1,9 @@
 package finalPrjct;
-import java.awt.*;
+import java.awt.*; 
 import java.awt.event.*;
 import java.util.*;
 import javax.swing.*;
+
 
 public class GamePanel extends JPanel {
 	
@@ -23,7 +24,15 @@ public class GamePanel extends JPanel {
 	
 	
 	GamePanel(){
+		newPaddles();
+		newBall();
+		score = new Score(gameWidth,gameHeight);
+		this.setFocusable(true);
+		this.addKeyListener(new AL()); //AL the inner class
+		this.setPreferredSize(ScreenSize);
 		
+		gameThread = new Thread((Runnable) this);
+		gameThread.start();
 	}
 	
 	public void newBall() {
