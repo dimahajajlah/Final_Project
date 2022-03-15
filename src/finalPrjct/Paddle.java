@@ -1,5 +1,6 @@
 package finalPrjct;
 
+import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Rectangle;
 import java.awt.event.KeyEvent;
@@ -35,6 +36,11 @@ public class Paddle extends Rectangle {
 		
 	}
 	public void draw(Graphics g) {
-		
+		if(id==1) {
+			g.setColor(Color.gray);
+		}else {
+			g.setColor(Color.yellow);
+		g.fillRect(x, y, width, height);
+		}
 	}
 }
