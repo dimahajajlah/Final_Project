@@ -30,7 +30,6 @@ public class GamePanel extends JPanel implements Runnable {
 		this.setFocusable(true);
 		this.addKeyListener(new AL()); //AL the inner class
 		this.setPreferredSize(ScreenSize);
-		
 		gameThread = new Thread((Runnable) this);
 		gameThread.start();
 	}
@@ -53,6 +52,7 @@ public class GamePanel extends JPanel implements Runnable {
 	public void draw(Graphics g) {
 		paddle1.draw(g);
 		paddle2.draw(g);
+		
 	}
 	public void move() {
 		
@@ -88,8 +88,8 @@ public class GamePanel extends JPanel implements Runnable {
 		}
 		
 		public void keyReleased(KeyEvent e) {
-			
-			
+			paddle1.keyReleased(e);
+			paddle2.keyReleased(e);
 		}
 
 

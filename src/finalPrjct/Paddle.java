@@ -5,6 +5,7 @@ import java.awt.Graphics;
 import java.awt.Rectangle;
 import java.awt.event.KeyEvent;
 
+
 public class Paddle extends Rectangle {
 	
 	int id; //id for player : 1 or 2, id.1 paddle1 , id.2 paddle2
@@ -40,7 +41,7 @@ public class Paddle extends Rectangle {
 			g.setColor(Color.blue);
 		}else {
 			g.setColor(Color.yellow);
-		g.fillRect(x, y, width, height);
 		}
+		g.fillRect(x, y, width, height);
 	}
 }
