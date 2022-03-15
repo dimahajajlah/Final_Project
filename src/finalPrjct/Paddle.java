@@ -10,7 +10,7 @@ public class Paddle extends Rectangle {
 	int y; //for y Velocity
 
 	
-	Paddle(){
+	Paddle(int x, int y, int PaddleWidth, int PaddleHeight, int id){
 		
 	}
 	
