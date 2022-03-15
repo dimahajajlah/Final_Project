@@ -51,11 +51,30 @@ public class GamePanel extends JPanel implements Runnable {
 	public void draw(Graphics g) {
 		
 	}
+	public void move() {
+		
+	}
+	
 	public void checkCollision() {
 		
 	}
 	public void run() {
-		
+		long lastTime = System.nanoTime();
+		double amountOfTicks =60.0;
+		double ns = 1000000000 / amountOfTicks;
+		double delta = 0;
+		while(true) {
+			long now = System.nanoTime();
+			delta += (now-lastTime)/ns;
+			lastTime = now;
+			if(delta >=1) {
+				move();
+				checkCollision();
+				repaint();
+				delta--;
+				System.out.println("TEST");
+			}
+		}
 	}
 	
 	public class AL extends KeyAdapter{
