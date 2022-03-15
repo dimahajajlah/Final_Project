@@ -5,7 +5,7 @@ import java.util.*;
 import javax.swing.*;
 
 
-public class GamePanel extends JPanel {
+public class GamePanel extends JPanel implements Runnable {
 	
 	static final int gameWidth=1000; //game Width
 	static final int gameHeight= (int)(gameWidth*(0.5555)); //game Height 
@@ -42,6 +42,7 @@ public class GamePanel extends JPanel {
 		
 	}
 	public void print(Graphics g) {
+		image = createImage(getWidth(),getHeight());
 		
 	}
 	public void draw(Graphics g) {
