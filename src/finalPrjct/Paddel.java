@@ -1,9 +1,10 @@
 package finalPrjct;
 
 import java.awt.Graphics;
+import java.awt.Rectangle;
 import java.awt.event.KeyEvent;
 
-public class Paddel {
+public class Paddel extends Rectangle {
 	
 	Paddel(){
 		

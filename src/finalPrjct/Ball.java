@@ -1,8 +1,9 @@
 package finalPrjct;
 
 import java.awt.Graphics;
+import java.awt.Rectangle;
 
-public class Ball {
+public class Ball extends Rectangle {
 	
 	Ball(){
 		
