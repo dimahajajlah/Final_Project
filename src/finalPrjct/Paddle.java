@@ -9,7 +9,7 @@ import java.awt.event.KeyEvent;
 public class Paddle extends Rectangle {
 	
 	int id; //id for player : 1 or 2, id.1 paddle1 , id.2 paddle2
-	int y; //for y Velocity
+	int yV; //for y Velocity
 
 	
 	Paddle(int x, int y, int PaddleWidth, int PaddleHeight, int id){
@@ -37,6 +37,7 @@ public class Paddle extends Rectangle {
 		
 	}
 	public void draw(Graphics g) {
+		
 		if(id==1) {
 			g.setColor(Color.blue);
 		}else {
