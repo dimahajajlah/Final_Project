@@ -7,7 +7,7 @@ import javax.swing.*;
 
 public class GamePanel extends JPanel implements Runnable {
 	
-	static final int gameWidth=1000; //game Width
+	static final int gameWidth=1200; //game Width
 	static final int gameHeight= (int)(gameWidth*(0.5555)); //game Height 
 	static final Dimension ScreenSize = new Dimension(gameWidth,gameHeight); //Screen Size from java.awt.Dimension
 	static final int BallDiameter = 20; //Ball Diameter
@@ -52,6 +52,7 @@ public class GamePanel extends JPanel implements Runnable {
 	}
 	public void draw(Graphics g) {
 		paddle1.draw(g);
+		paddle2.draw(g);
 	}
 	public void move() {
 		
