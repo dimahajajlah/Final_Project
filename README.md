@@ -18,6 +18,11 @@ I'm a fan of table tennis or Ping Pong. This game was one of the first games tha
 Because of the recent epidemic conditions, it was difficult to go out to play Ping Pong in the playgrounds, so programming a model of it today is fun.
 
 
+# Classes Description
+1)	GamePanel class:
+This class creates a rectangular playing board according to the lengths set, and creates a playing rackets and a ball.
+it  also shows the rackets and the ball and moves them
+
 
 Advanced Programming Lab
 
