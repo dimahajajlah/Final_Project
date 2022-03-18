@@ -21,8 +21,24 @@ Because of the recent epidemic conditions, it was difficult to go out to play Pi
 ## Classes Description
 1)	GamePanel class:
 This class creates a rectangular playing board according to the lengths set, and creates a playing rackets and a ball.
-it  also shows the rackets and the ball and moves them
+it  also shows the rackets and the ball and moves them.
 
+- Methods name 
+newBall() : Will create a new ball on the screen.
+newPaddles() : Create two paddles to the game.
+print(Graphics g) : To print every thing on the screen with one parameter G
+draw(Graphics g) : To draw the item like paddle or ball, with one parameter G
+checkCollision() : Checks that the paddles do not cross the entire screen, checks that the ball hits the edges of the panel or is blocked by the paddle.
+run() : Create a game loop with 60 frames.
+
+- There's inner class
+Class AL extends KeyAdapter (inner class)
+//ALr short for action listener
+Method name 
+keyPressed(KeyEvent e) : Handle the key pressed event, with one parameter e.
+keyReleased(KeyEvent e) : Handle the key released event, with one parameter e.
+
+2) Paddle class:
 
 Advanced Programming Lab
 
