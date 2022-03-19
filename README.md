@@ -79,7 +79,25 @@ Ball(int x, int y, int width, int height) : It builds the shape of the ball acco
 | void | setY( int randomYDirection) | It gives a random direction on the y-coordinates |
 | void | move() | Move the ball, the speed of the ball increases as it is moved with the racket |
 | void | draw(Graphics g) | Draw the ball and give it a color |
-| void | >> | |
+
+
+4)	Score class:
+- Constructors
+Score(int GameWidth, int GameHeight) : Showing the score and drawing on the playing board such as pitch lines, etc.
+
+- Methods
+
+| Return Type  | Method name  |  Operation |
+| :---         |     :---:      |          ---: |
+| void | draw(Graphics g) |   Draw the result and some other things |
+
+
+5)	GameFrame class:
+- Constructors
+GameFrame() : Create object from GamePanel()It controls the pop-up interface like its color and title.
+
+
+___________________________________
 
 Advanced Programming Lab
 
