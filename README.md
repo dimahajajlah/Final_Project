@@ -51,6 +51,16 @@ keyPressed(KeyEvent e) : Handle the key pressed event, with one parameter e.
 keyReleased(KeyEvent e) : Handle the key released event, with one parameter e.
 
 2) Paddle class:
+- Constructors
+Paddel(int x, int y, int PaddleWidth, PaddleHeight, int id) : Create paddle with id number according to the lengths set, there is 5 parameters.
+
+- Methods
+
+| Return Type  | Method name  |   | Operation |
+| void | keyPressed(KeyEvent e) |   | The paddle 1 moves up if the letter w is pressed on the keyboard and down s in the y direction
+Paddle 2 moves up if the up arrow is pressed on the keyboard, and the down arrow is down |
+| void | >> |
+| void | >> |
 
 Advanced Programming Lab
 
