@@ -5,20 +5,23 @@ import java.util.*;
 import javax.swing.*;
 
 
+
 public class GamePanel extends JPanel implements Runnable {
 	
 	static final int gameWidth=1200; //game Width
-	static final int gameHeight= (int)(gameWidth*(0.5555)); //game Height 
+	//static final int gameHeight= (int)(gameWidth*(0.5555)); //game Height 
+	static final int gameHeight= gameWidth * 9 / 16; //game Height 
 	static final Dimension ScreenSize = new Dimension(gameWidth,gameHeight); //Screen Size from java.awt.Dimension
 	static final int BallDiameter = 20; //Ball Diameter
-	static final int PaddleWidth = 25; //Paddle Width
-	static final int PaddleHeight = 100; //Paddle Height
+	static final int PaddleWidth = 35; //Paddle Width
+	static final int PaddleHeight = 120; //Paddle Height
 	Thread gameThread;
 	Image image;
 	Graphics graphics;
 	Random random;
 	Paddle paddle1;
 	Paddle paddle2;
+	Paddle p3;
 	Ball ball;
 	Score score;
 	
@@ -30,16 +33,20 @@ public class GamePanel extends JPanel implements Runnable {
 		this.setFocusable(true);
 		this.addKeyListener(new ALr()); //AL the inner class
 		this.setPreferredSize(ScreenSize);
-		gameThread = new Thread((Runnable) this);
+		//this.paint(graphics);
+		gameThread = new Thread(this);
 		gameThread.start();
 	}
 	
 	public void newBall() {
-		
+		//random = new Random();
+		//ball = new Ball((gameWidth/2)-(BallDiameter/2),random.nextInt(gameHeight-BallDiameter),BallDiameter,BallDiameter);
+	
 	}
 	public void newPaddles() {
-		paddle1 = new Paddle(0,(gameHeight/2)-(PaddleHeight/2),PaddleWidth,PaddleHeight,1);
-		paddle2 = new Paddle(gameWidth-PaddleWidth,(gameHeight/2)-(PaddleHeight/2),PaddleWidth,PaddleHeight,2);
+		 paddle1 = new Paddle(0,(gameHeight/2)-(PaddleHeight/2),PaddleWidth,PaddleHeight,1);
+		 paddle2 = new Paddle(gameWidth-PaddleWidth,(gameHeight/2)-(PaddleHeight/2),PaddleWidth,PaddleHeight,2);
+
 	}
 	public void print(Graphics g) {
 		image = createImage(getWidth(),getHeight());
@@ -50,12 +57,15 @@ public class GamePanel extends JPanel implements Runnable {
 		
 	}
 	public void draw(Graphics g) {
-		paddle1.draw(g);
-		paddle2.draw(g);
-		
+		//g.setFont(getFont());
+		paddle1.drawPaddle(g);
+		paddle2.drawPaddle(g);
+		System.out.println(paddle2.id);
+		//p3.draw(g);
 	}
 	public void move() {
-		
+		paddle1.move();
+		paddle2.move();
 	}
 	
 	public void checkCollision() {

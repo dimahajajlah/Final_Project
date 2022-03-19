@@ -7,17 +7,20 @@ import java.util.*;
 
 public class GameFrame extends JFrame {
 	
-	GamePanel panel;
+	GamePanel panell;
 	GameFrame(){
-		panel = new GamePanel();
-		this.add(panel);
+		panell = new GamePanel();
+		this.add(panell);
 		this.setTitle("** Pong Game **");
+		panell.setBackground(Color.darkGray);
 		this.setResizable(false);
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		this.pack();
-		panel.setBackground(Color.darkGray);
 		this.setVisible(true);
 		this.setLocationRelativeTo(null); //it's going to appear in the middle of the screen 
+		//panell.paddle1;
+		//System.out.println(panell.paddle1);
+		
 	}
 
 }
