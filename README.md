@@ -64,6 +64,21 @@ Paddle 2 moves up if the up arrow is pressed on the keyboard, and the down arrow
 | void | setY (int yDirection) | set y direction that y Velocity equals it |
 | void | move() | The paddle moves as the y-value increases in its direction |
 | void | draw(Graphics g) | Draws the paddle according to the id number and gives it a color |
+
+
+
+3)	Ball class:
+- Constructors
+Ball(int x, int y, int width, int height) : It builds the shape of the ball according to its size and launches it each time in a random direction.
+
+- Methods
+
+| Return Type  | Method name  |  Operation |
+| :---         |     :---:      |          ---: |
+| void | setX( int randomXDirection) |  It gives a random direction on the x-coordinates |
+| void | setY( int randomYDirection) | It gives a random direction on the y-coordinates |
+| void | move() | Move the ball, the speed of the ball increases as it is moved with the racket |
+| void | draw(Graphics g) | Draw the ball and give it a color |
 | void | >> | |
 
 Advanced Programming Lab
