@@ -17,6 +17,7 @@ I'm a fan of table tennis or Ping Pong. This game was one of the first games tha
 -	The problem
 Because of the recent epidemic conditions, it was difficult to go out to play Ping Pong in the playgrounds, so programming a model of it today is fun.
 
+___________________________________
 
 ## Classes Description
 1)	GamePanel class:
@@ -50,6 +51,8 @@ keyPressed(KeyEvent e) : Handle the key pressed event, with one parameter e.
 
 keyReleased(KeyEvent e) : Handle the key released event, with one parameter e.
 
+___________________________________
+
 2) Paddle class:
 - Constructors
 Paddel(int x, int y, int PaddleWidth, PaddleHeight, int id) : Create paddle with id number according to the lengths set, there is 5 parameters.
@@ -65,7 +68,7 @@ Paddle 2 moves up if the up arrow is pressed on the keyboard, and the down arrow
 | void | move() | The paddle moves as the y-value increases in its direction |
 | void | draw(Graphics g) | Draws the paddle according to the id number and gives it a color |
 
-
+___________________________________
 
 3)	Ball class:
 - Constructors
@@ -80,6 +83,7 @@ Ball(int x, int y, int width, int height) : It builds the shape of the ball acco
 | void | move() | Move the ball, the speed of the ball increases as it is moved with the racket |
 | void | draw(Graphics g) | Draw the ball and give it a color |
 
+___________________________________
 
 4)	Score class:
 - Constructors
@@ -91,6 +95,8 @@ Score(int GameWidth, int GameHeight) : Showing the score and drawing on the play
 | :---         |     :---:      |          ---: |
 | void | draw(Graphics g) |   Draw the result and some other things |
 
+
+___________________________________
 
 5)	GameFrame class:
 - Constructors
