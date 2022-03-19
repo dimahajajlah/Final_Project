@@ -22,6 +22,7 @@ public class Paddle extends Rectangle {
 		super(x,y,PaddleWidth,PaddleHeight);
 		this.id=id;
 	}
+
 	 
 	
 	public void keyPressed(KeyEvent e) {
@@ -36,20 +37,27 @@ public class Paddle extends Rectangle {
 		yV = yDirection;
 	}
 	
-	public void setX(int xDirection) {
+
+	public void move() {
 		y = y + yV;
 	}
-	
-	public void move() {
-		
-	}
 	public void drawPaddle(Graphics g) {
-		
+//		switch(id) {
+//	case 1:
+//		g.setColor(Color.yellow);
+//		g.fillRect(x, y, width, height);
+//		break;
+//	case 2:
+//		g.setColor(Color.pink);
+//		g.fillRect(x, y, width, height);
+//		break;
+//	}
 		if(id ==1) {
-			g.setColor(Color.pink);
+			g.setColor(Color.PINK);
+			//g.setColor(Color.pink);
 	
 		}else {
-			g.setColor(Color.yellow);
+			g.setColor(Color.ORANGE);
 		}
 		g.fillRect(x, y, width, height);
 	

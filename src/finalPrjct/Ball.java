@@ -9,6 +9,8 @@ public class Ball extends Rectangle {
 	int y; //for y Velocity
 	int x; //for x Velocity
 	Random random;
+	//Rectangle ball;
+
 	
 	Ball(){
 		
