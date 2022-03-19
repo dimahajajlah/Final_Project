@@ -56,8 +56,8 @@ Paddel(int x, int y, int PaddleWidth, PaddleHeight, int id) : Create paddle with
 
 - Methods
 
-| Return Type  | Method name  |   | Operation |
-| void | keyPressed(KeyEvent e) |   | The paddle 1 moves up if the letter w is pressed on the keyboard and down s in the y direction
+| Return Type  | Method name  |  Operation |
+| void | keyPressed(KeyEvent e) |  The paddle 1 moves up if the letter w is pressed on the keyboard and down s in the y direction
 Paddle 2 moves up if the up arrow is pressed on the keyboard, and the down arrow is down |
 | void | >> |
 | void | >> |
