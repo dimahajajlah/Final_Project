@@ -60,8 +60,11 @@ Paddel(int x, int y, int PaddleWidth, PaddleHeight, int id) : Create paddle with
 | :---         |     :---:      |          ---: |
 | void | keyPressed(KeyEvent e) |  The paddle 1 moves up if the letter w is pressed on the keyboard and down s in the y direction
 Paddle 2 moves up if the up arrow is pressed on the keyboard, and the down arrow is down |
-| void | >> |
-| void | >> |
+| void | keyReleased(KeyEvent e) | We set the value to zero so that it does not move |
+| void | setY (int yDirection) | set y direction that y Velocity equals it |
+| void | move() | The paddle moves as the y-value increases in its direction |
+| void | draw(Graphics g) | Draws the paddle according to the id number and gives it a color |
+| void | >> | |
 
 Advanced Programming Lab
 
