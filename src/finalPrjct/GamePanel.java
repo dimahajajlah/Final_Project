@@ -43,8 +43,8 @@ public class GamePanel extends JPanel implements Runnable {
 	}
 	
 	public void newBall() {
-		//random = new Random();
-		//ball = new Ball((gameWidth/2)-(BallDiameter/2),random.nextInt(gameHeight-BallDiameter),BallDiameter,BallDiameter);
+		random = new Random();
+		ball = new Ball((gameWidth/2)-(BallDiameter/2),random.nextInt(gameHeight-BallDiameter),BallDiameter,BallDiameter);
 	
 	}
 	public void newPaddles() {
@@ -66,6 +66,7 @@ public class GamePanel extends JPanel implements Runnable {
 
 		g.drawString("", gameWidth, gameHeight);
 		
+		ball.draw(g);
 		paddle1.drawPaddle(g);
 		paddle2.drawPaddle(g);
 		score.draw(g);
@@ -75,6 +76,7 @@ public class GamePanel extends JPanel implements Runnable {
 	public void move() {
 		paddle1.move();
 		paddle2.move();
+		ball.move();
 	}
 	
 	public void checkCollision() {
