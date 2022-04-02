@@ -104,6 +104,8 @@ GameFrame() : Create object from GamePanel()It controls the pop-up interface lik
 
 ___________________________________
 
+![image](https://user-images.githubusercontent.com/79136459/161394087-cfa5100f-84a0-4949-b8dc-5d7a077c3a09.png)
+
 
 When the project is fully completed, I will add some secondary things, such as the sound that comes out when a goal is scored, as the original sound was in the game in its original version in 1972.
 
