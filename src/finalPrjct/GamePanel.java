@@ -80,7 +80,55 @@ public class GamePanel extends JPanel implements Runnable {
 	}
 	
 	public void checkCollision() {
-		
+				if(ball.y <=0) {
+					ball.setYDirection(-ball.y);
+				}
+				if(ball.y >= gameHeight-BallDiameter) {
+					ball.setYDirection(-ball.y);
+				}
+				//bounce ball off paddles
+				if(ball.intersects(paddle1)) {
+					ball.x = Math.abs(ball.x);
+					ball.x++; //optional for more difficulty
+					if(ball.y>0)
+						ball.y++; //optional for more difficulty
+					else
+						ball.y--;
+					ball.setXDirection(ball.x);
+					ball.setYDirection(ball.y);
+				}
+				if(ball.intersects(paddle2)) {
+					ball.x = Math.abs(ball.x);
+					ball.x++; //optional for more difficulty
+					if(ball.y>0)
+						ball.y++; //optional for more difficulty
+					else
+						ball.y--;
+					ball.setXDirection(-ball.x);
+					ball.setYDirection(ball.y);
+				}
+				//stops paddles at window edges
+				if(paddle1.y<=0)
+					paddle1.y=0;
+				if(paddle1.y >= (gameHeight-PaddleHeight))
+					paddle1.y = gameHeight-PaddleHeight;
+				if(paddle2.y<=0)
+					paddle2.y=0;
+				if(paddle2.y >= (gameHeight-PaddleHeight))
+					paddle2.y = gameHeight-PaddleHeight;
+				//give a player 1 point and creates new paddles & ball
+				if(ball.x <=0) {
+					score.player2++;
+					newPaddles();
+					newBall();
+					System.out.println("Player 2: "+score.player2);
+				}
+				if(ball.x >= gameWidth-BallDiameter) {
+					score.player1++;
+					newPaddles();
+					newBall();
+					System.out.println("Player 1: "+score.player1);
+				}
 	}
 	public void run() {
 		

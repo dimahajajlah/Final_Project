@@ -27,7 +27,8 @@ public class Score extends Rectangle {
 		g.drawArc(500, 260, 200, 230, 200, 700);
 		g.drawString(String.valueOf(player1/10)+String.valueOf(player1%10), (gameWidth/2)-85, 90);
 		g.drawString(String.valueOf(player2/10)+String.valueOf(player2%10), (gameWidth/2)+20, 90);
-	
+		g.drawString("1972 ", 9, 600);
+		g.drawString("DiMa :)", 9, 670);
 	}
 
 }
